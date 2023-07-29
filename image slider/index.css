@@ -1,0 +1,59 @@
+.container{
+    border: 10px solid;
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    margin: 70px;
+    width: 1350px;
+    /* overflow: hidden; */
+    
+    
+}
+
+.slider{
+    display: flex;
+    /* overflow: hidden; */
+  } 
+
+.slider img{
+
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+     
+}
+
+.slide{
+    flex: 0 0 100%;
+}
+
+.previous img,
+.next img {
+    width: 70px;
+}
+
+
+
+.active{
+    transform: translateX(0);
+}
+
+
+.previous {
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    /* transform: translateY(10%); */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
