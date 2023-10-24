@@ -44,11 +44,11 @@ body {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around;        /* flex-start flex-end space-between space-around space-evenly */
   height: 500px;
   width: 500px;
   position: relative;
-  transition: 0.4s ease;
+   transition: 0.4s ease;         /* linear ease-in ease-out ease-in-out */
 }
 
 .boxes.big {
@@ -68,11 +68,12 @@ body {
   height: 125px;
   width: 125px;
   transition: 0.4s ease;
+  
 }
 
 .box::after {
   content: '';
-  background-color: #f6e58d;
+  background-color: #f9ca24;
   position: absolute;
   top: 8px;
   right: -15px;
